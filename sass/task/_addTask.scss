@@ -1,0 +1,104 @@
+#addTask__form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.addTask__form-control {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px 5px;
+    border: 2px solid #324b4e;
+    background-color: #F9F0DA;
+    border-radius: 9px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.addTask__btn {
+    position: relative;
+    width: 60px;
+    border-radius: 9px;
+    margin-right: 0.6px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        width: 25%;
+        height: 2px;
+        display: block;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 2px;
+        height: 25%;
+        display: block;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.addTask__list {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 247, 255, 0.39);
+    border-radius: 9px;
+    padding: 10px;
+}
+
+.addTask__listEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addTask__listEmpty-title {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.addTask__listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: rgba(3, 0, 197, 0.24);
+    border-radius: 9px;
+}
+
+.addTask__listTitle {
+    margin: 0 10px;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.addTask__listTitle--done {
+    text-decoration: line-through;
+    color: #CDCDCD;
+}
+
+.addTask__listBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-left: 10px;
+
+    img {
+        pointer-events: none;
+    }
+
+    & > * + * {
+        margin-left: 15px;
+    }
+
+    &:last-child {
+        margin-right: 10px;
+    }
+}

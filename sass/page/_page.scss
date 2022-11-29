@@ -1,0 +1,51 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    background-color: #e4e4e4;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    background-color: #20EEB0;
+    height: 60px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.none {
+    display: none !important;
+}
